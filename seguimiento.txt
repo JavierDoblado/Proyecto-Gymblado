@@ -13,3 +13,4 @@ Sí hay label y README.md.
 -> Corrige las carencias y en el label inserta una imagen donde "pintes" el look de como sería la ventana principal.
 -> Refactoriza (cambia) los nombres de todas las clases (ya lo tienes en muchas) y objetos que uses de forma que sean exclusivos tuyos y del proyecto (en el futuro no evaluaré nada con nombres genéricos automatizados).
 -> Un único "main" en todo el proyecto.
+-> Recuerda, siempre tienes que añadir un breve comentario de porque has realizado el commint.
