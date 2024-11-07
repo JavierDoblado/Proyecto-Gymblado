@@ -2,7 +2,12 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
-package gymblado;
+package CamaraDeVigilancia;
+
+import java.awt.Image;
+import java.awt.event.ComponentAdapter;
+import java.awt.event.ComponentEvent;
+import javax.swing.ImageIcon;
 
 /**
  *
@@ -13,8 +18,40 @@ public class ViendoTuEntrenamiento extends javax.swing.JFrame {
     /**
      * Creates new form ViendoTuEntrenamiento
      */
-    public ViendoTuEntrenamiento() {
+     public ViendoTuEntrenamiento() {
         initComponents();
+        setResizable(true);  // Para permitir que la ventana sea redimensionable
+        ajustarImagen(); 
+                this.addComponentListener(new ComponentAdapter() {
+            @Override
+            public void componentResized(ComponentEvent e) {
+                ajustarImagen();
+            }
+        });
+// Método para ajustar la imagen
+    }
+
+    /**
+     * Este método ajusta la imagen al tamaño del JLabel y de la ventana.
+     */
+     private void ajustarImagen() {
+        // Ruta absoluta o relativa de la imagen. Asegúrate de que la imagen existe en la ubicación dada
+        String rutaImagen = "ruta/a/tu/imagen.jpg"; // Cambia a la ruta de tu imagen
+
+        // Carga la imagen desde el archivo
+        ImageIcon imagenOriginal = new ImageIcon("fondo.jpg");
+
+        // Verifica si la imagen se cargó correctamente
+        if (imagenOriginal.getImageLoadStatus() == java.awt.MediaTracker.COMPLETE) {
+            // Redimensiona la imagen para que coincida con el tamaño del JLabel
+            Image imagenRedimensionada = imagenOriginal.getImage().getScaledInstance(
+                    jLabel1.getWidth(), jLabel1.getHeight(), Image.SCALE_SMOOTH);
+
+            // Establece la imagen redimensionada en el JLabel
+            jLabel1.setIcon(new ImageIcon(imagenRedimensionada));
+        } else {
+            System.out.println("No se pudo cargar la imagen en la ruta: " + "fondo.jpg");
+        }
     }
 
     /**
@@ -30,23 +67,15 @@ public class ViendoTuEntrenamiento extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jLabel1.setText("Bienvenido Al Gimnasio De Doblado");
-
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(102, 102, 102)
-                .addComponent(jLabel1)
-                .addContainerGap(107, Short.MAX_VALUE))
+            .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, 400, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(19, 19, 19)
-                .addComponent(jLabel1)
-                .addContainerGap(265, Short.MAX_VALUE))
+            .addComponent(jLabel1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 329, Short.MAX_VALUE)
         );
 
         pack();
@@ -57,6 +86,22 @@ public class ViendoTuEntrenamiento extends javax.swing.JFrame {
      */
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
+         try {
+            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
+                if ("Nimbus".equals(info.getName())) {
+                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
+                    break;
+                }
+            }
+        } catch (ClassNotFoundException ex) {
+            java.util.logging.Logger.getLogger(ViendoTuEntrenamiento.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (InstantiationException ex) {
+            java.util.logging.Logger.getLogger(ViendoTuEntrenamiento.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (IllegalAccessException ex) {
+            java.util.logging.Logger.getLogger(ViendoTuEntrenamiento.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
+            java.util.logging.Logger.getLogger(ViendoTuEntrenamiento.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        }
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
         /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
          * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
