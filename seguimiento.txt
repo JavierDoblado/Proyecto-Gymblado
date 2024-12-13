@@ -14,3 +14,9 @@ Sí hay label y README.md.
 -> Refactoriza (cambia) los nombres de todas las clases (ya lo tienes en muchas) y objetos que uses de forma que sean exclusivos tuyos y del proyecto (en el futuro no evaluaré nada con nombres genéricos automatizados).
 -> Un único "main" en todo el proyecto.
 -> Recuerda, siempre tienes que añadir un breve comentario de porque has realizado el commint.
+
+2º modificación:
+Elimina la imagen, y debes tener 3 ventanas (la tercera es el JDialog):
+1-> presentación, no redimensionable (tamaño mediano), simulando la carga, y desaparece por tiempo.
+2-> Salta la principal,donde esa imagen retocada sería el fondo de tu panel principal, donde todo la botonera es funcional en el sentido de mandar un mensaje por consola, y usar el botón  de  configuración que lanza tu JDialog modificado. Controlas los botones de ejercicios qeu se cargan, debe poder cargar los datos en el arranque (debe recordar).
+Todo los métodos y clases documentados.
