@@ -3,6 +3,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
  */
 package gymblado;
+import CamaraDeVigilancia.CargaLaCamara;
 import Gymodelo.ModelaTuCuerpo;
 import CamaraDeVigilancia.ViendoTuEntrenamiento;
 import GestionGym.ControlaTusMusculos;
@@ -17,16 +18,18 @@ public class GImainASIO {
     /**
      * @param args the command line arguments
      */
-    public static void main(String[] args) {
-          ViendoTuEntrenamiento TeVigilo = new ViendoTuEntrenamiento();
-        
-        // Crear la instancia del modelo
-        ModelaTuCuerpo esculpete = new ModelaTuCuerpo();
-        
-        // Crear la instancia del controlador y pasarle el modelo y la vista
-        ControlaTusMusculos controlador = new ControlaTusMusculos(esculpete, TeVigilo);
-        
-        // Mostrar la vista
-        TeVigilo.setVisible(true);
+        public static void main(String[] args) {
+        // TODO code application logic here
+         
+        // Crear las vistas
+        CargaLaCamara vistaCarga = new CargaLaCamara();
+        ViendoTuEntrenamiento vistaPrincipal = new ViendoTuEntrenamiento();
+
+        // Crear el controlador y pasarle las vistas
+        ControlaTusMusculos controlador = new ControlaTusMusculos (vistaCarga, vistaPrincipal);
+
+        // Iniciar la aplicación
+        controlador.iniciarAplicacion();
     }
+    
 }

@@ -17,7 +17,6 @@ public class ModelaTuCuerpo {
     public ModelaTuCuerpo() {
     }
 
-    // Constructor
     public ModelaTuCuerpo(String nombre, String descripcion, String zonaCuerpo, boolean enCasa) {
         this.nombre = nombre;
         this.descripcion = descripcion;
@@ -26,38 +25,35 @@ public class ModelaTuCuerpo {
     }
 
     public String getNombre() {
-        return nombre;
+        return nombre; 
     }
-
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
+    
+    public void setNombre(String nombre) { 
+        this.nombre = nombre; 
     }
 
     public String getDescripcion() {
-        return descripcion;
+        return descripcion; 
     }
-
+    
     public void setDescripcion(String descripcion) {
         this.descripcion = descripcion;
     }
 
-    public String getZonaCuerpo() {
+    public String getZonaCuerpo() { 
         return zonaCuerpo;
     }
-
-    public void setZonaCuerpo(String zonaCuerpo) {
+    
+    public void setZonaCuerpo(String zonaCuerpo) { 
         this.zonaCuerpo = zonaCuerpo;
     }
 
-    public boolean isEnCasa() {
+    public boolean isEnCasa() { 
         return enCasa;
     }
-
-    public void setEnCasa(boolean enCasa) {
-        this.enCasa = enCasa;
+    
+    public void setEnCasa(boolean enCasa) { 
+        this.enCasa = enCasa; 
     }
-
-
-
-   
 }
+
