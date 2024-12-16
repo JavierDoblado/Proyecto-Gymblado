@@ -20,7 +20,7 @@ public class GImainASIO {
      */
         public static void main(String[] args) {
         // TODO code application logic here
-         
+//         
         // Crear las vistas
         CargaLaCamara vistaCarga = new CargaLaCamara();
         ViendoTuEntrenamiento vistaPrincipal = new ViendoTuEntrenamiento();
