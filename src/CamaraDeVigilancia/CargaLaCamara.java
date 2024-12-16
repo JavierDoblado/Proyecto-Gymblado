@@ -18,6 +18,7 @@ public class CargaLaCamara extends javax.swing.JFrame {
     /**
      * Creates new form CargaLaCamara
      */
+    //
     public CargaLaCamara() {
         initComponents();
         Timer timer = new Timer(3000, new ActionListener() {

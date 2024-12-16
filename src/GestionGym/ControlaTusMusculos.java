@@ -22,8 +22,8 @@ public class ControlaTusMusculos {
     }
 
 
-    
-    
+    //
+//    
     public void iniciarAplicacion() {
         // Mostrar la ventana de carga
         vistaCarga.setVisible(true);

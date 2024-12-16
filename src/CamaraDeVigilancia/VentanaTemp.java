@@ -10,7 +10,7 @@ import javax.swing.*;
 public class VentanaTemp  {
 
     void setVisible(boolean b) {
-        
+        //
     }
 //  public VentanaTemp() {
 //        initComponents();

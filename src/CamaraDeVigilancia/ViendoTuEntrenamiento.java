@@ -25,7 +25,7 @@ public class ViendoTuEntrenamiento extends javax.swing.JFrame {
         initComponents();
         setResizable(true);  // Para permitir que la ventana sea redimensionable
         setSize(500, 429);  // Tamaño inicial de la ventana
-
+//
         setLayout(null); // Usar un layout nulo para controlar el tamaño del panel manualmente
 
         imagePanel = new ImagePanel(); // Instanciamos el panel personalizado

@@ -23,7 +23,7 @@ public class ModelaTuCuerpo {
         this.zonaCuerpo = zonaCuerpo;
         this.enCasa = enCasa;
     }
-
+//
     public String getNombre() {
         return nombre; 
     }
