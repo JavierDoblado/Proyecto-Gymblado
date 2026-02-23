@@ -13,7 +13,7 @@ public class ModelaTuCuerpo {
     private String descripcion;
     private String zonaCuerpo; // Ejemplo: "Pecho", "Espalda", etc.
     private boolean enCasa; // True si se puede hacer en casa, false si requiere equipo de gimnasio
-
+//MODELO
     public ModelaTuCuerpo() {
     }
 
@@ -56,4 +56,5 @@ public class ModelaTuCuerpo {
         this.enCasa = enCasa; 
     }
 }
+
 
