@@ -28,7 +28,8 @@ public class CargaLaCamara extends javax.swing.JFrame {
                 VentanaTemp principal = new VentanaTemp();
                 principal.setVisible(true);
                  JLabel cargando = new JLabel();
-                 cargando.setText("Cargando....");
+            //AÑADIDO POSICION MENSAJE CARGANDO 
+                 cargando.setText("Cargando..");
                  cargando.setLocation(100, 100);
                 // Ocultar la ventana de carga
                 dispose();
