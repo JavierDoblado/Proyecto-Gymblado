@@ -21,6 +21,8 @@ public class ViendoTuEntrenamiento extends javax.swing.JFrame {
      * Creates new form ViendoTuEntrenamiento
      */
       private ImagePanel imagePanel;
+
+    //ESTA CARPETA ENTERA ES DE LA VISTA
     public ViendoTuEntrenamiento() {
         initComponents();
         setResizable(true);  // Para permitir que la ventana sea redimensionable
