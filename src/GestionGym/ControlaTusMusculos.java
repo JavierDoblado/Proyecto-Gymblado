@@ -15,6 +15,7 @@ public class ControlaTusMusculos {
 
     private CargaLaCamara vistaCarga;
     private ViendoTuEntrenamiento vistaPrincipal;
+//Esto es para un commit
 
     public ControlaTusMusculos(CargaLaCamara vistaCarga, ViendoTuEntrenamiento vistaPrincipal) {
         this.vistaCarga = vistaCarga;
@@ -40,4 +41,5 @@ public class ControlaTusMusculos {
             }
         });
     }
+
 }
